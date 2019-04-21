@@ -1,20 +1,9 @@
-#include "libft.h"
-#include <string.h>
-
-void tst(char *str)
-{
-	while (*str)
-	{
-		*str = ft_toupper(*str);
-		str++;
-	}
-}
 
 int		main()
 {
 	char *str;
-	str = ft_strdup("qwertyu");
-	ft_striter(str, &tst);
+
+	str = ft_strncpy(ft_strdup("12"), "zxcvb", 5);
 
 	ft_putstr(str);
 	return (0);
